@@ -1,6 +1,6 @@
 import { createRequest } from "./request";
 
-const url = "http://localhost:5200/";
+const url = "http://localhost:8080/";
 
 export const request = createRequest({ baseURL: url });
 
