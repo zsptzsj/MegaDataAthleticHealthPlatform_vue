@@ -66,7 +66,6 @@ export default class CustomAxiosInstance {
           if (backend[codeKey] === successCode) {
             return handleServiceResult(null, backend[dataKey]);
           }
-
           const error = handleBackendError(backend, this.backendConfig);
           return handleServiceResult(error, null);
         }

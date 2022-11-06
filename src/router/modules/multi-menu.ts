@@ -49,30 +49,11 @@ const routes: Array<RouteRecordRaw> = [
           {
             name: "multi-menu_first_second-new",
             path: "second-new",
+            component: () => import("@/views/studentmanagement/index.vue"),
             meta: {
-              title: "班级信息",
+              title: "班级管理",
               icon: renderIcon(MenuOutline),
             },
-            children: [
-              {
-                name: "multi-menu_first_second-new_third_1",
-                path: "third_1",
-                component: () => import("@/views/multi-menu/first/second-new/third/index.vue"),
-                meta: {
-                  title: "三级菜单",
-                  icon: renderIcon(MenuOutline),
-                },
-              },
-              {
-                name: "multi-menu_first_second-new_third_2",
-                path: "third_2",
-                component: () => import("@/views/multi-menu/first/second-new/third/index.vue"),
-                meta: {
-                  title: "三级菜单",
-                  icon: renderIcon(MenuOutline),
-                },
-              },
-            ],
           },
         ],
       },
